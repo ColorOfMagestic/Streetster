@@ -65,11 +65,11 @@ function scripts() {
 function createWebp() {
     return src('app/img/**/*.{jpg,png,svg}')
     .pipe(webp())
-    .pipe(dest('dist/img/webp'))
+    .pipe(dest('app/img'))
 }
 
 function images() {
-    return src('app/img/**/*.{jpg,png,svg}')
+    return src('app/img/**/*.{jpg,png,svg,webp}')
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({progressive: true}),

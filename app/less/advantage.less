@@ -1,0 +1,64 @@
+.advantage {
+    .advantage-title {
+        padding-top: 83px;
+        padding-bottom: 153px;
+        text-align: center;
+        .text-l;
+    }
+    .advantage-cards {
+        padding: 0  142px 170px;
+        display: flex;
+        justify-content: space-between;
+        .advantage-card {
+            position: relative;
+            max-width: 33.3%;
+            margin-right: 81px;
+            background-color: #f2f2f2;
+            .advantage-card_title {
+                padding-top: 57px;
+                padding-bottom: 10px;  
+                text-align: center;
+                .text-m;
+                font-weight: bold;
+            }
+            .advantage-card_text {
+                padding: 0 18px 24px;
+                text-align: center;
+                .text-s;
+
+            }
+        }
+        .advantage-card:last-child {
+            margin-right: 0;
+        }
+        .service {
+            &::before {
+                position: absolute;
+                display: block;
+                content: url(../img/servise.png);
+                top: -40%;
+                left: 30%;
+            }
+        }
+        .structure {
+            &::before {
+                position: absolute;
+                display: block;
+                content: url(../img/structure.png);
+                top: -40%;
+                left: 30%;
+            }
+        }
+        .parts {
+            &::before {
+                position: absolute;
+                display: block;
+                content: url(../img/parts.png);
+                top: -40%;
+                left: 30%;
+            }
+        }
+
+    }
+
+}

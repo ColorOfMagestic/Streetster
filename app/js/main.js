@@ -1,16 +1,16 @@
    const swiper = new Swiper('.swiper-container', {
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    slidesPerView: 2,
+
+    spaceBetween: 30,
+
+    initialSlide: 1,
+
+    centeredSlides: true
   
-    // And if we need 
-  });
+   });
   

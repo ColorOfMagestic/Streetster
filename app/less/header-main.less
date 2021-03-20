@@ -25,7 +25,6 @@
             }
         }
         .header-menu {
-            display: none;
             position: absolute;
             right: -70px;
             top: 0;
@@ -94,9 +93,14 @@
                     }
             }
         }
+        .header-menu--closed {
+            display: none;
+        }
+
         .header-menu--active {
             display: block;
         }
+
 
         .card_menu {
             .cart_block {
@@ -146,6 +150,10 @@
                     }
 
                 }
+            }
+
+            .cart_block--closed {
+                display: none;
             }
             .cart_block--active {
                 display: block;
@@ -229,27 +237,43 @@
            
             }
             .burger-menu--active {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                margin-right: 20px;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                &:hover {
+                    box-shadow: 0px 0px 15px 1px #000;
+                    transition: 1.5s;      
+                    }
+                &:focus {
+                    box-shadow: 0px 0px 15px 1px #000;      
+                    }
                 .burger-menu_decor {
                     background: transparent;
                     &::before {
                         content:"";
-                        width: 100%;
+                        width: 26px;
                         height: 2px;
                         background: #000;
                         position: absolute;
-                        top: 0;
-                        left: 0;
+                        top: 24px;
+                        right: 10px;
                         transform: rotate(45deg);
                         transition: 0.5s;
                         }
                     &::after {
                         content:"";
-                        width: 100%;
+                        width: 26px;
                         height: 2px;
                         background: #000;
                         position: absolute;
-                        top: 0;
-                        left: 0;
+                        top: 24px;
+                        right: 10px;
                         transform: rotate(-45deg);
                         transition: 0.5s;
                         } 

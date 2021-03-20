@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
            <input class="header-search" type="text" placeholder=" ">
             
            <div class="card_menu">
-             <div class="cart_block ">
+             <div class="cart_block cart_block--closed">
                <h5 class="cart_block-title">
                 В корзине 2 товара
                </h5>
@@ -46,9 +46,9 @@
                 заказать
               </button>
              </div>
-             <button class="cart ">
+             <button class="cart">
           </button>
-          <div class="header-menu ">
+          <div class="header-menu header-menu--closed">
             <div class="top-block">
               <div class="lang">
                 <a class="lang lang--ru"href="">RU</a>
@@ -204,39 +204,47 @@
       <h2 class="news-title">
         Новости
       </h2>
-      <div class="news-slider">
-        <div class="news-slider-slide">
-          <img src="img/news-img1.jpg" alt="" class="slide-img">
-          <div class="slide_content">
-            <div class="slide-title">
-                Лучшие аксессуары для стрит байков
+
+      <div class="swiper-container news-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper news-slider_wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div class="news-slider-slide">
+            <img src="img/news-img1.jpg" alt="" class="slide-img">
+            <div class="slide_content">
+              <div class="slide-title">
+                  Лучшие аксессуары для стрит байков
+                </div>
+                <p class="slide-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                </p>
+                <a href="" class="slide-link">Читать</a>
               </div>
-              <p class="slide-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-              </p>
-              <a href="" class="slide-link">Читать</a>
+            </div></div>
+          <div class="swiper-slide"><div class="news-slider-slide">
+            <img src="img/news-img2.jpg" alt="" class="slide-img">
+            <div class="slide_content">
+              <div class="slide-title">Куда поехать в Киеве?</div>
+            <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <a href="" class="slide-link">Читать</a>
             </div>
-          </div>
-          
-        <div class="news-slider-slide">
-          <img src="img/news-img2.jpg" alt="" class="slide-img">
-          <div class="slide_content">
-            <div class="slide-title">Куда поехать в Киеве?</div>
-          <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-          <a href="" class="slide-link">Читать</a>
+          </div></div>
+          <div class="swiper-slide"><div class="news-slider-slide">
+            <img src="img/news-img3.jpg" alt="" class="slide-img">
+            <div class="slide_content">
+              <div class="slide-title">Как обслуживать свой велосипед?</div>
+            <p class="slide-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+            </p>
+            <a href="" class="slide-link">Читать</a>
+            </div> 
           </div>
         </div>
-        <div class="news-slider-slide">
-          <img src="img/news-img3.jpg" alt="" class="slide-img">
-          <div class="slide_content">
-            <div class="slide-title">Как обслуживать свой велосипед?</div>
-          <p class="slide-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
-          </p>
-          <a href="" class="slide-link">Читать</a>
-          </div> 
         </div>
+       
       </div>
+      <div class="swiper-button-prev news_button-prev"></div>
+      <div class="swiper-button-next news_button-next"></div>
     </section>
     <section class="mailing">
       <h3 class="mailing-title">

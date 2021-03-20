@@ -1,16 +1,23 @@
 .news {
     position: relative;
     top: -147px;
+    width: 100%;
     .news-title {
         padding-bottom: 63px;
         .title;
         text-align: center;
     }
+
     .news-slider {
         display: flex;
+        min-width: 0;
+        max-width: 80%;
         justify-content: space-around;
         align-items: start;
-        .news-slider-slide {
+        .news-slider_wrapper {
+            width: 100%;
+        }
+         .news-slider-slide {
             width: 100%;
             .slide-img {
                 width: 100%;
@@ -59,4 +66,22 @@
             padding: 0 41px;
         }
     }
+    .news_button-prev {
+        outline: none;
+        left: 50px;
+        &::after {
+          position: absolute;
+          content: url(../img/left_arrow_black.png);
+        }
+      }
+    
+    .news_button-next {
+        outline: none;
+        right: 50px;
+        &::after {
+          position: absolute;
+          content: url(../img/right_arrow_black.png);
+        }
+    }   
+    
 }

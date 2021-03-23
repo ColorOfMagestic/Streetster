@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -76,4 +76,18 @@ body {
 
 .m-bottom {
     margin-bottom: 30px;
+}
+
+@media screen and (min-width:@mobile) and (max-width:@tablet) {
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .m-right {
+        margin-right: 0;
+    }
+    .m-bottom {
+        margin-bottom: 0;
+    }
 }

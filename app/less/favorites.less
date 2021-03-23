@@ -79,3 +79,90 @@
 
 
 }
+@media screen and (min-width:@mobile) and (max-width:@tablet) {
+    .favorites {
+        padding-bottom: 40px;
+        .favorites-title{
+            font-size: 42px;
+            line-height: 42px;
+        }
+        .favorites-items{
+            display: flex;
+            flex-wrap: wrap;
+            .favorites-item-main {
+                position: relative;
+                width: 100%;
+                min-height: 335px;
+                margin-bottom: 30px;
+                background: #000;
+                color: #fff;
+                .favorites-item-main_title {
+                    padding: 30px 30px;
+                    .text-m;
+                }
+                .favorites-item-main_text {
+                    padding: 0 30px;
+                    .text-s;
+                }
+                .favorites-item-main_img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+                .favorites-item-main-btn_next {
+                    position: absolute;
+                    bottom: 50px;
+                    right: 50px;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 0;
+                    background: transparent;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    transition: 1.5s;      
+                    &::before {
+                        content: url(../img/btn-next.svg);
+                    }
+                    &:hover {
+                        box-shadow: 0px 0px 15px 1px #fff;
+                        }
+                   &:focus {
+                    box-shadow: 0px 0px 15px 1px #fff;      
+                    }
+    
+                }
+                
+            }
+            
+            .favorites-item-selection {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                .favorites-item-selection_item {
+                    display: inline-block;
+                    width: 48%;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    background: #000;
+                    color: #fff;
+                    &:not(:nth-child(odd)){
+                        margin-right: 0; 
+                    }
+                }
+                .selection_item-img {
+                    max-width: 50%;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                }
+                .selection_item-text {
+                    padding: 15px 5px;
+                    text-align: center;
+                    .text-s;
+                }
+                
+    
+            }
+        }
+    }
+}

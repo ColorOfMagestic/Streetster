@@ -32,12 +32,15 @@
             margin-right: 0;
         }
         .service {
+            position: relative;
             &::before {
                 position: absolute;
-                display: block;
                 content: url(../img/servise.png);
-                top: -40%;
-                left: 30%;
+                 max-width: 134px;
+                    margin: auto;
+                    top: -75px;
+                    right: 0;
+                    left: 0;
             }
         }
         .structure {
@@ -45,8 +48,11 @@
                 position: absolute;
                 display: block;
                 content: url(../img/structure.png);
-                top: -40%;
-                left: 30%;
+                 max-width: 134px;
+                 top: -75px;
+                 margin: auto;
+                right: 0;
+                left: 0;
             }
         }
         .parts {
@@ -54,11 +60,48 @@
                 position: absolute;
                 display: block;
                 content: url(../img/parts.png);
-                top: -40%;
-                left: 30%;
+                max-width: 134px;
+                margin: auto;
+                top: -75px;
+                right: 0;
+                left: 0;
             }
         }
 
     }
 
+}
+@media screen and (min-width:@mobile) and (max-width:@tablet) {
+    .advantage {
+        .advantage-title {
+            padding:41px 30px 75px;
+            text-align: center;
+            .text-m;
+            font-weight: 700;
+        }
+        .advantage-cards {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            .advantage-card {
+                max-width: 100%;
+                margin: 0 auto;
+                margin-bottom: 90px;
+                .advantage-card_title {
+                    .text-s;
+                    font-weight: bold;
+                }
+                .advantage-card_text {
+                    padding: 0 18px 24px;
+                    text-align: center; 
+                    font-size: 16px;
+                    line-height: 16px;   
+                }
+            }
+            .advantage-card:last-child {
+                margin-right: 0;
+            }
+        }
+    
+    }
 }

@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
+  <!--header-->
   <header class="header-main">
     <div class="container">
       <h1 class="visually-hidden">Streetster-Выбор велосипедов</h1>
       <div class="top-bar">
-        <picture>
+        <div class="top-bar_logo-block">
+          <picture>
           <source srcset="./img/logo_header.webp">
-          <img src="./img/logo_header.png" alt="" />
+          <img class="top-bar-img" src="./img/logo_header.png" alt="" />
         </picture>
-           <input class="header-search" type="text" placeholder=" ">
-            
-           <div class="card_menu">
-             <div class="cart_block cart_block--closed">
-               <h5 class="cart_block-title">
+        </div>
+        <input class="header-search" type="text" placeholder=" ">
+        <div class="card_menu">
+          <div class="cart_block cart_block--closed">
+            <h5 class="cart_block-title">
                 В корзине 2 товара
                </h5>
                <div class="cart_block-item">
@@ -99,15 +101,17 @@
       </button>
     </div>
   </header>
+  <!--/header-->
+
+  <!-- main -->
   <main class="main-page">
     <div class="bg-curves">
-      <div class="categories">
+      <!-- categories -->
+      <section class="categories">
         <h2 class="categories-title title">
           Категории
         </h2>
-
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -136,9 +140,12 @@
           <div class="swiper-button-prev btn-prev"></div>
           <div class="swiper-button-next btn-next"></div>
       </div>
-    </div>
+    </section>
+      <!--/categories -->
+
+      <!-- favorites -->
       <div class="container">
-      <div class="favorites">
+      <section class="favorites">
         <h2 class="favorites-title ">Избранные товары</h2>
         <div class="favorites-items">
            <div class="favorites-item-main m-right">
@@ -166,7 +173,8 @@
              </div>
            </div>
         </div>
-      </div>
+      </section>
+            <!--/favorites -->
       </div>
     </div>
     <article class="streetser-descriptoin">
@@ -176,6 +184,7 @@
       <p class="streetser-descriptoin-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
     </article>
     <div class="bg-2-curves">
+      <!-- advantage -->
       <section class="advantage">
         <h3 class="advantage-title">Велосипеды Streetster это...</h3>
         <div class="advantage-cards">
@@ -199,7 +208,9 @@
           </div>
         </div>
       </section>
+      <!--/advantage -->
     </div>
+    <!-- news -->
     <section class="news">
       <h2 class="news-title">
         Новости
@@ -246,6 +257,9 @@
       <div class="swiper-button-prev news_button-prev"></div>
       <div class="swiper-button-next news_button-next"></div>
     </section>
+    <!--/news -->
+
+    <!-- mailing -->
     <section class="mailing">
       <h3 class="mailing-title">
         Подпишитесь на новостную рассылку
@@ -253,9 +267,13 @@
       <input class="mailing-input" type="text" placeholder="Email">
       <button class="mailing-btn">ПОДПИСАТЬСЯ</button>
     </section>
+        <!-- /mailing -->
   </main>
+   <!--/main -->
+   <!--footer -->
   <footer class="main-footer">
     <div class="container">
+<!-- footer-content -->
       <div class="footer-content">
           <img src="img/logo_footer.png" alt="" class="main-footer-logo">
           <ul class="footer-categories">
@@ -293,16 +311,20 @@
           </div>
         </div>
       </div>
+      <!--/footer-content -->
+      <!-- footer-copyright -->
     <div class="copyright">
       <p class="copyright-text">© STREETSTER — Все права защищены</p>
     </div>
+    <!-- footer-copyright -->
   </footer>
+  <!--/footer -->
+
+  <!-- scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/main.min.js"></script>
-  
-    
-  
-    
+    <!--/scripts -->
+   
 </body>
 </html>

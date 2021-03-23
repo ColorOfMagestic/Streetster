@@ -1,7 +1,7 @@
 .header-main {
-    width: 100%;
+    min-width: 100vw;
     background-image:url(../img/BG_main.jpg),url(../img/BG_main.webp);
-    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
     .top-bar {
         position: relative;
@@ -9,6 +9,9 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 35px;
+        padding-right: 40px;
+        padding-left: 40px;
+
         .header-search {
             width: 31%;
             height: 30px;
@@ -17,8 +20,11 @@
             border: none;
             border-radius: 15.5px;
             outline: none;
-            &::placeholder {
-                background: url(../img/search.svg) no-repeat 0 2px;
+            &::-webkit-input-placeholder {
+                background: url(../img/search.svg) no-repeat 0px 2px;
+            }
+            &::-moz-placeholder  {
+                background: url(../img/search.svg) no-repeat 10px 8px;
             }
             &:focus {
                 box-shadow: 0px 0px 15px 1px #fff;
@@ -29,7 +35,6 @@
             right: -70px;
             top: 0;
             width: 30%;
-            height: 550px;
             border-radius: 5px;
             background-color: #fff;
             .top-block {
@@ -104,7 +109,6 @@
 
         .card_menu {
             .cart_block {
-                display: none;
                 position: absolute;
                 width: 27.3%;
                 min-height: 200px;
@@ -138,15 +142,18 @@
                     width: 100%;
                     min-height: 62px;
                     text-transform: uppercase;
+                    border-radius:0 0 5px 5px;
+
                     .text-s;
                     font-weight: 900;
                     outline: none;
                     border:none;
+                    transition: 1.5s;
                     &:hover {
                         background: #000;
                         color: #fff;
                         opacity: 1;
-                        transition: 1s;
+                        
                     }
 
                 }
@@ -250,9 +257,7 @@
                     box-shadow: 0px 0px 15px 1px #000;
                     transition: 1.5s;      
                     }
-                &:focus {
-                    box-shadow: 0px 0px 15px 1px #000;      
-                    }
+                
                 .burger-menu_decor {
                     background: transparent;
                     &::before {
@@ -299,11 +304,13 @@
     .header-more {
         width: 206px;
         height: 41px;
+        margin-left: 30px;
         margin-bottom: 229px;
         padding:7px 18px 8px;
         background: #000;
         color: #fff;
         text-transform: uppercase;
+        transition: 1.5s;
         .text-s;
         font-weight: 700;
         border: none;
@@ -311,11 +318,231 @@
         outline: none;
         &:hover {
             border-radius: 45px;
-            transition: 1.5s;
             box-shadow: 0px 0px 15px 1px #fff;
         }
         &:focus {
             box-shadow: 0px 0px 15px 1px #fff;
         }
+    }
+}
+@media screen and (min-width:@mobile) and (max-width:@tablet) {
+    .header-main {
+        background-image:url(../img/mountain-bike_mob.jpg),url(../img/mountain-bike_mob.webp);
+        background-size: cover;
+        .container {
+            max-width: 80%;
+        }
+        .top-bar {
+            padding: 20px 0 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .top-bar_logo-block {
+                max-width: 50%;
+                margin-right: auto;
+            }
+            .header-search {
+                width: 100%;
+                margin: 0;
+                margin-top: 10px;
+                margin-right: auto;
+                transition: 1s;
+                order: 2;
+            }
+            .card_menu {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                .cart_block {
+                    width: 100%;
+                    position: absolute;
+                    min-height: 200px;
+                    top: 120%;
+                    left: 0;
+                    right: 0;
+                    background: #fff;
+                    border-radius: 5px;
+                    opacity: 1;
+                    .cart_block-title {
+                        margin: 0;
+                        padding: 15px 0 0 30px;
+                        .text-s;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    .cart_block-item {
+                        padding: 10px 30px 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px solid #000;
+                        .cart_block-item_content {
+                            padding-left: 28px;
+                            .content_name {
+                                .text-s;
+                            }
+                        }
+                    }
+                    .cart_block_btn {
+                        display: block;
+                        width: 100%;
+                        min-height: 62px;
+                        text-transform: uppercase;
+                        .text-s;
+                        font-weight: 900;
+                        outline: none;
+                        border:none;
+                        transition: 1.5s;
+                        &:hover {
+                            background: #000;
+                            color: #fff;
+                            opacity: 1;
+                            
+                        }
+    
+                    }
+                }
+                .cart {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0;
+                    padding: 0;
+                    &::before {
+                        position: absolute;
+                        top: 20%;
+                        left: 15%;
+                        }
+                }
+                .burger-menu {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0;
+                    margin-left: 5px;
+                    padding: 0;
+                    transition: 1.5s;                     
+                    &:hover {
+                        box-shadow: 0px 0px 15px 1px #fff;
+                             
+                        }
+                    &:focus {
+                    box-shadow: 0px 0px 15px 1px #fff;      
+                    }
+                
+                    }
+                    .burger-menu--active {
+                        width: 40px;
+                        height: 40px;
+                        &:hover {
+                            box-shadow: 0px 0px 15px 1px #000;
+                            transition: 1.5s;      
+                            }
+                        
+                        .burger-menu_decor {
+                            background: transparent;
+                            &::before {
+                                top: 19px;
+                                right: 7px;  
+                                }
+                            &::after {
+                                top: 19px;
+                                right: 7px;
+                                } 
+        
+                        }
+                    }
+                .header-menu {
+                    width: 100%;
+                    left: 0;
+                }    
+            }
+            .header-menu {
+                position: absolute;
+                right: -70px;
+                top: 0;
+                width: 30%;
+                border-radius: 5px;
+                background-color: #fff;
+                .top-block {
+                    display: flex;
+                    padding: 38px 30px 28px;
+                    .lang {
+                        margin-top: -7px;
+                        .text-m;
+                       text-decoration: none;
+                       color: #000;
+                    }
+                }
+    
+                .menu_categories{
+                    .menu-categories-item {
+                        padding: 0 30px 10px;
+                        .menu-categories-item-link {
+                            text-decoration: none;
+                            color: #000;
+                            .text-m;
+                            font-size: 18px;
+                            font-weight: bolder;
+                            &:hover {
+                                border-bottom: 1px solid #000;
+                            }
+                        }
+                    }
+                }
+    
+                .menu-info {
+                    padding-top: 20px;
+                    .menu-info-item {
+                        padding: 0 30px 10px;
+                        
+                        }
+                        .menu-info-item-link {
+                            text-decoration: none;
+                            color: #000;
+                            .text-s;
+                            &:hover {
+                                border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+    
+                .social_menu {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    padding: 0 30px;
+                    .social_menu-link {
+                        padding-right: 10px;
+                        font-size: 0;
+                        }
+                    .social_menu-link-ig {
+                        &::before {
+                            content: url(../img/icons8-instagram-32_bl.png);
+                        }
+                    
+                        }
+                    .social_menu-link-fb {
+                        &::before {
+                            content: url(../img/icons8-facebook-f-32_bl.png);
+                             }
+                        }
+                }
+            }
+        }
+        .header-text {
+            margin-top: 130px;
+            padding-bottom: 30px;
+            font-size: 16px;
+        }
+        .header-title {
+            font-size: 32px;
+            line-height: 32px;
+
+        }
+        .header-more {
+            margin: 0;
+            margin-bottom: 90px;
+        }
+        
     }
 }

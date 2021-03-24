@@ -26,6 +26,13 @@
     spaceBetween: 42,
 
     loop: true,
+
+    breakpoints: {
+      
+      320: {
+        slidesPerView: 1,
+      }
+    }
   });
 
 

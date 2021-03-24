@@ -31,6 +31,9 @@
       
       320: {
         slidesPerView: 1,
+
+        spaceBetween: 12,
+
       }
     }
   });

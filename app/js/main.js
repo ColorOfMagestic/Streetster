@@ -34,6 +34,12 @@
 
         spaceBetween: 12,
 
+      },
+      767: {
+        slidesPerView: 3,
+
+        spaceBetween: 42,
+
       }
     }
   });

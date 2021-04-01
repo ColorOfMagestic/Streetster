@@ -1,0 +1,182 @@
+.product-card--nathan {
+    display: flex;
+    .product-card_parameters {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        padding-top: 64px;
+        .parameters-wrapper {
+            width: 75%;
+            margin: 0 auto;
+          .parameters_title {
+            padding-bottom: 3px;
+            .text-l;
+            }  
+            .parameters_price {
+                padding-bottom: 15px;  
+                .text-m;
+            }
+            .parameters_description {
+            .text-s;
+            &:first-of-type {
+                padding-bottom: 40px;
+            }
+        }
+        .parameters_colors {
+            .parameters_colors_title {
+                margin: 0;
+                padding-top: 25.5px;
+                padding-bottom: 12px;
+                .text-s;
+                font-weight: 700;
+                }
+            .color_wrapper {
+                display: flex;
+                margin-bottom: 53.5px;
+                .color-label-radio {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+                .color-radio {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    clip: rect(0 0 0 0);
+                }
+                .color {
+                    position: absolute;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    border: 2px solid #dbdbdb;
+                }
+                .color-radio:checked + .color--one::before {
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: #000;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                .color-radio:checked + .color--two::before {
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: #5A88FF;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                .color-radio:checked + .color--three::before {
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: #FF5A5A;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                }
+        }
+        .parameters-btn {
+            width: 100%;
+            min-height: 52.5px;
+            margin-bottom: 70px;
+            border: 2px solid #000;
+            background: #fff;
+            text-align: center;
+             color: #000;
+            .text-s;
+            font-weight: bolder;
+            text-transform: uppercase;
+            transition: 0.8s;
+            &:hover {
+                background-color: #000;
+                color: #fff;   
+            }
+        }
+        }
+        
+        
+        
+        
+        
+    }
+    .product-slider {
+        position: relative;
+            width: 100%; 
+            margin: 0 auto;
+            margin-top: 100px;
+        .product-slider_content {
+            .product-slider_img {
+                margin: 0 auto;
+            }
+        }
+        .product-slider_button-prew {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 30%;
+            left: 40px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1.5s;
+            &::after {
+                content: url(../img/left_arrow_black.png);
+            }
+            &:hover {
+                box-shadow: 0 0 15px 1px #000;
+            }
+
+        }
+        .product-slider_button-next {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 30%;
+            right: 40px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1.5s;
+            &::after {
+                content: url(../img/right_arrow_black.png);
+            }
+            &:hover {
+                box-shadow: 0 0 15px 1px #000;
+            }
+        }
+        .product-slider_dots {
+            display: flex;
+            width: 25%;
+            margin: 0 auto;
+            margin-top: 93px;
+           .dot {
+               display: block;
+               width: 24px;
+               height: 6px;
+               margin-right: 9px;
+               background-color: #575757;
+               &:last-child {
+                margin-right: 0;
+               }
+           }
+           .dot--active {
+            background-color: #000;
+           } 
+        }
+    }
+}

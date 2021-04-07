@@ -16,6 +16,7 @@
       <div class="top-bar">
         <div class="top-bar_logo-block">
           <picture>
+          <source srcset="./img/logo_header.png">
           <source srcset="./img/logo_header.webp">
           <img class="top-bar-img" src="./img/logo_header.png" alt="" />
         </picture>
@@ -113,29 +114,39 @@
   <main class="main-category">
     <section class="product-card product-card--nathan">
       <div class="product-card_parameters">
-        <h3 class="parameters_title">
-          STREETSTER NATHAN
-        </h3>
-        <span class="parameters_price">12000 ₴</span>
-        <p class="parameters_description">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p class="parameters_description">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <div class="parameters_colors">
-          <h5 class="parameters_colors_title">Доступно в цветах:</h5>
-          <div class="color_wrapper">
-            <span class="color color--one"></span>
-            <span class="color color--two"></span>
-            <span class="color color--three"></span>
-          </div>
-          <button class="parameters-btn">подробнее</button>
-        </div>
+        <div class="parameters-wrapper">
+            <h3 class="parameters_title">
+              STREETSTER NATHAN
+            </h3>
+            <span class="parameters_price">12000 ₴</span>
+            <p class="parameters_description">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="parameters_description">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="parameters_colors">
+              <h5 class="parameters_colors_title">Доступно в цветах:</h5>
+              <div class="color_wrapper">
+                <label class="color-label-radio">
+                  <input type="radio" class="color-radio" name="color--nathan" checked >
+                  <span class="color color--one"></span>
+                </label>
+                <label class="color-label-radio">
+                  <input type="radio" class="color-radio" name="color--nathan">
+                  <span class="color color--two"></span>
+                </label>
+                <label class="color-label-radio">
+                  <input type="radio" class="color-radio" name="color--nathan">
+                  <span class="color color--three"></span>
+                </label>
+              </div>
+            </div>
+            <a href="bike.html" class="parameters-btn">подробнее</a>
 
-          
+         </div>
         </div>
         <div class="product-slider">
           <div class="product-slider_content">
@@ -180,10 +191,9 @@
               </label>
             </div>
           </div>
-          <button class="parameters-btn">подробнее</button>
+            <a href="bike.html" class="parameters-btn">подробнее</a>
         </div>
-
-          
+ 
         </div>
         <div class="product-slider">
           <div class="product-slider_content">
@@ -228,7 +238,7 @@
               </label>
             </div>
           </div>
-          <button class="parameters-btn">подробнее</button>
+          <a href="bike.html" class="parameters-btn">подробнее</a>
         </div>
         </div>
         <div class="product-slider">

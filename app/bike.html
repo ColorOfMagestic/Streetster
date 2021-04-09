@@ -109,37 +109,44 @@
                   </div>
             </section>
             <aside class="header-bike-order-price">
+              <div class="order-price-wrapper">
                 <h3 class="order-price_title">
                     STREETSTER NATHAN
                 </h3>
                 <span class="order-price-total">12000 ₴</span>
                 <div class="order_colors">
                     <h5 class="order_colors_title">Цвет :</h5>
-                    <span class="">Черный</span>
+                    <span class="colors_title_span">Черный</span>
                     <div class="color_wrapper">
                       <label class="color-label-radio">
-                        <input type="radio" class="color-radio" name="color--backerstreet">
-                        <span class="color color--one"></span>
+                        <input type="radio" class="color-radio" name="one" checked>
+                        <span class="color color--one color--active"></span>
                       </label>
                       <label class="color-label-radio">
-                        <input type="radio" class="color-radio" name="color--backerstreet">
+                        <input type="radio" class="color-radio" name="two" checked>
                         <span class="color color--two"></span>
                       </label>
                       <label class="color-label-radio">
-                        <input type="radio" class="color-radio" name="color--backerstreet">
+                        <input type="radio" class="color-radio" name="tree" checked>
                         <span class="color color--three"></span>
                       </label>
                     </div>
                   </div>
                 <div class="order_chassis">
                     <h5 class="order_chassis_title">Рама:</h5> 
-                    <span class="order_chassis_span">54” (Рост 175-185 см)</span> 
-                    <label class="order_chassis_label">
-                        <input type="radio" name="chassis">
-                    </label>
-                    <label class="order_chassis_label">
-                        <input type="radio" name="chassis">
-                    </label>   
+                    <span class="order_chassis_span">54” (Рост 175-185 см)</span>
+                    <div class="order_chassis_radio_wrapper">
+                        <label class="order_chassis_label">
+                        <input class="chassis_radio" type="radio" name="chassis" checked>
+                        <span class="chassis-radio-span radio--one"></span>
+                        </label>
+                        
+                        <label class="order_chassis_label">
+                        <input class="chassis_radio" type="radio" name="chassis">
+                        <span class="chassis-radio-span radio--two"></span>
+                        </label>   
+
+                    </div> 
                 </div>
                 <div class="additional_accessories">
                     <h5 class="additional_accessories_title">
@@ -149,23 +156,27 @@
                         <div class="accessory">
                             <img  class="accessory-pic" src="./img/bicycle_helmet_PNG.png" alt="">
                             <p class="accessory-text">
-                                Шлем Octane 500 ₴
+                                Шлем Octane <span class="accessory_price">500 ₴</span> 
                             </p>
-                            <button class="add_accessory">+</button>
+                            <button class="accessory-btn accessory-btn--add">+</button>
                         </div>
                         <div class="accessory">
                             <img  class="accessory-pic" src="./img/Canyon_Ass.png" alt="">
                             <p class="accessory-text">
-                                Защита Canyon 500 ₴
+                                Защита Canyon <span class="accessory_price">500 ₴</span> 
                             </p>
-                            <button class="del_accessory">-</button>
+                            <button class="accessory-btn accessory-btn--del">-</button>
                         </div>
                     </div>
                 </div>
                 <div class="order-total">
-                    <p class="order-total-text">Итого:<span class="order-total-text_span">12500 ₴</span></p>
+                    <p class="order-total-text">
+                      Итого:
+                    </p>
+                    <span class="order-total-text_span">12500 ₴</span>
                 </div>
                 <button class="order-price-btn">заказать</button>
+              </div>
             </aside>
           </div>
         </header>

@@ -1,0 +1,62 @@
+.main-bike_content {
+    display: flex;
+    justify-content: space-between;
+    .bike-description {
+        width: 50%;
+        margin-top: 60px;
+        margin-right: 30px;
+        .bike-description_title {
+            margin-bottom: 20px;
+            .text-m;
+            font-weight: 700;
+            }
+        .bike-description_text {
+            .text-s;
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            &:last-child {
+                margin-bottom: 142px;
+            }
+        }
+    }
+    .reviews {
+        width: 50%;
+        margin-top: 60px;
+        .reviews_title {
+            margin-bottom: 20px;
+            .text-m;
+            font-weight: 700;
+        }
+        .reviews-cards {
+            min-height: 123px;
+            background-color: #f2f2f2;
+            &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            .feedback {
+                padding: 22px 32px;
+                .autor {
+                    display: inline-block;
+                    .text-s;
+                    font-weight: 700;
+                    margin-bottom: 10px; 
+                }
+                .stars {
+                    display: inline-block;
+                    .star {
+                        &:not(:last-child) {
+                            padding-right: 5px;
+                        }
+                        &::before {
+                            content: url(../img/star.png);
+                        }
+                    }
+                }
+                .feedback-text {
+                    .text-s;
+                }
+            }
+        }
+    }
+}

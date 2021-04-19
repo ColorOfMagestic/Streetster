@@ -128,3 +128,75 @@
         }
     }
 } 
+@media screen and (min-width:@tablet) and (max-width:@laptop) {
+    .main-bike_content {
+        display: block;
+        .bike-description {
+            width: 100%;
+            margin-top: 30px;
+            margin-right: 15px;
+            .bike-description_title {
+                margin-bottom: 20px;
+                .text-m;
+                font-weight: 700;
+                text-align: center;
+                }
+            .bike-description_text {
+                .text-sx;
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 30px;
+            .reviews_title {
+                width: 100%;   
+                margin-bottom: 10px;
+                .text-m;
+                font-weight: 700;
+                text-align: center;
+            }
+            .reviews-cards {
+                width: 48%;
+                height: 185px;
+                min-height: 180px;
+                background-color: #f2f2f2;
+                &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                .feedback {
+                    padding: 22px 32px;
+                    .autor {
+                        display: inline-block;
+                        .text-s;
+                        font-weight: 700;
+                        margin-bottom: 10px; 
+                    }
+                    .stars {
+                        display: flex;
+                        .star {
+                            &:not(:last-child) {
+                                padding-right: 5px;
+                            }
+                            &::before {
+                                content: url(../img/star.png);
+                            }
+                        }
+                    }
+                    .feedback-text {
+                        font-family:'FuturaPT-Book';
+                        .text-sx;
+                    }
+                }
+            }
+        }
+    }
+}

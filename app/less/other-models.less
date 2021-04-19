@@ -426,3 +426,128 @@
         }
     } 
 }
+@media screen and (min-width:@tablet) and (max-width:@laptop) {
+    .other-models {
+        width: 100%;
+        .other-models_title {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 30px;
+            .text-m;
+            font-weight: 700;
+            text-align: center;
+        }
+        .other-models_cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 164px;
+            margin-bottom: 80px;
+            .other-models_card {
+                position: relative;
+                width: 30%;
+                background-color: #f2f2f2;
+                
+            }
+            .other-models_card--nathan,
+            .other-models_card--baker,
+            .other-models_card--broad {
+                .other-models_pic {
+                    position: absolute;
+                    margin: 0 auto;
+                    top: -98px;
+                    right: 0;
+                    left: 0;
+                }
+                .other-models_card_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    .other-models_card_content {
+                        padding: 0;
+                        padding-top: 60px;
+                        text-align: center;
+                        .other-models_price {
+                            display: block;
+                            margin: 20px 0;
+                        }
+                    }
+                    .other-models_colors {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        padding-bottom: 40px;
+    
+                        .other-models_color {
+                            width: 25px;
+                            height: 25px;
+                            border : 1px solid #dbdbdb;
+                            border-radius: 50%;
+                            background-color: transparent;
+                            &:not(:last-child) {
+                                margin-right: 15px;
+                                }   
+                        }
+                        .other-models_color--black {
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background-color: #000;
+                                transform: translate(3px ,3px);
+                            }
+                        }
+                        .other-models_color--blue {
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background-color: #5a88ff;
+                                transform: translate(3px ,3px);
+                            }
+                        }
+                        .other-models_color--red {
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background-color: #ff5a5a;
+                                transform: translate(3px ,3px);
+                            }
+                        }
+                        .other-models_color--white {
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background-color: #fff;
+                                transform: translate(3px ,3px);
+                            }
+                        }
+                        .other-models_color--yellow {
+                            &::before {
+                                display: block;
+                                content: "";
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background-color: #fac154;
+                                transform: translate(3px ,3px);
+                            }
+                        }
+                        
+
+                    }
+    
+                }
+            }
+        }
+    }
+}

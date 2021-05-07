@@ -103,11 +103,16 @@
             }
         }
         .header-menu--closed {
-            display: none;
+            // display: none;
+            transform: translateY(-100%);
+            transition-duration: 1.5s;
         }
 
         .header-menu--active {
-            display: block;
+            // display: block;
+            transform: translateY(0%);
+            transition-duration: 1.5s;
+
         }
 
 

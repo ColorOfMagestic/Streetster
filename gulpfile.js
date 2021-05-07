@@ -53,7 +53,7 @@ function browsersync() {
 
 function scripts() {
     return src([
-    'app/js/*.js'
+    'app/js/main.js'
     ]) 
     .pipe(concat('main.min.js'))
     .pipe(uglify())  

@@ -1,0 +1,99 @@
+.mailing {
+    min-height: 600px;
+    margin-top: -57px;
+    background-image: url(../img/bottom-bg.png);
+    background-repeat: no-repeat;
+    .mailing-title {
+        padding-top: 195px;
+        text-align: center;
+        .text-l;
+    }
+    .mailing-input {
+        display: block;
+        width: 33%;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 8px 20px;
+        .text-s;
+        border: 2px solid #000;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+            box-shadow: 0px 0px 15px 1px #000;
+        }
+    }
+    .mailing-btn {
+        display: block;
+        margin: 0 auto;
+        margin-bottom:227px;
+        width: 20%;
+        height: 45px;
+        background-color: transparent;
+        .text-s;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 2px solid #000;
+        outline: none;
+        transition: 0.8s;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        &:focus {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+@media screen and (min-width:@mobile) and (max-width:@tablet) {
+    .mailing {
+        min-height: 0;
+        margin-top: 0;
+        padding-bottom: 80px;
+        background-position-x: 40%;
+        background-position-y: -5%;
+        .mailing-title {
+            padding-top: 90px;
+            text-align: center;
+            .text-m;
+            font-weight: 700;
+        }
+        .mailing-input {
+            width: 80%;
+        }
+        .mailing-btn {
+            width: 60%;
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bolder;
+        }
+    } 
+}
+@media screen and (min-width:@tablet) and (max-width:@laptop){
+    .mailing {
+        min-height: 0;
+        margin-top: 0;
+        padding-bottom: 80px;
+        background-position: 0 -10%;
+        .mailing-title {
+            padding-top: 90px;
+            text-align: center;
+            .text-m;
+            font-weight: 700;
+        }
+        .mailing-input {
+            width: 40%;
+        }
+        .mailing-btn {
+            width: 20%;
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bolder;
+        }
+    } 
+}

@@ -108,76 +108,91 @@
           </h5> 
            <div class="content_in-cart-products">
              <div class="in-cart-product">
-               <img class="cart-product" src="" alt="pic">
+               <img class="cart-product" src="./img/bike_in_cart_prod.png" alt="pic">
                <div class="cart-product-description">
                  <div class="description-title">STREETSTER NATHAN</div>
                  <div class="description-content">Цвет: черный, Рама: 54”</div>
                </div>
-               <button class="cart-product-btn">1</button> 
+               <div class="cart-product-counter-container">
+                 <span class="cart-product-counter">1</span>
+                 <button class="cart-product-btn product-btn--less">-</button>
+                 <button class="cart-product-btn product-btn--more">+</button>
+               </div>
                <span class="cart-product-price">12000 ₴</span>
              </div> 
              <div class="in-cart-product">
-               <img class="cart-product" src="" alt="pic">
+               <img class="cart-product" src="./img/helmet_in_cart_prod.png" alt="pic">
                <div class="cart-product-description">
                  <div class="description-title">ШЛЕМ OCTANE</div>
                  <div class="description-content">Цвет: черный</div>
                </div>
-               <button class="cart-product-btn">1</button> 
+               <div class="cart-product-counter-container">
+                <span class="cart-product-counter">1</span>
+                <button class="cart-product-btn product-btn--less">-</button>
+                <button class="cart-product-btn product-btn--more">+</button>
+              </div>
                <span class="cart-product-price">6000 ₴</span>
-             </div> 
+             </div>
+              
            </div>
-           <span class="in-cart_delivery">Доставка: бесплатно</span>
-           <span class="in-cart_total">Итого: 18000 ₴</span>
+           <div class="in-cart_delivery">
+             <span class="delivery--bold">Доставка:</span> бесплатно</div>
+           <div class="in-cart_total">
+             <span class="total--bold">Итого</span> : 18000 ₴</div>
            <a class="in-cart_continuation" href="./category.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
            <button class="in-cart_arrange-btn">ОФОРМИТЬ ЗАКАЗ</button>
         </div>
         <form class="order-content_form" action="">
           <fieldset class="form-contact">
             <legend class="form-contact_title">Контактная информация</legend>
-            <label for="" class="form-contact_label">
-              Имя
-              <input type="text">
-            </label>
-            <label for="" class="form-contact_label">
-              Фамилия
-              <input type="text">
-            </label>
-            <label for="" class="form-contact_label">
-              Номер телефона
-              <input type="tel" maxlength="12">
-            </label>
-            <label for="" class="form-contact_label">
-              E-mail
-              <input type="email">
-            </label>
+            <div class="contact_label-wrapper">
+              <label  class="form-contact_label">
+                Имя
+                <input class="contact_input" type="text">
+              </label>
+              <label  class="form-contact_label">
+                Фамилия
+                <input class="contact_input" type="text">
+              </label>
+              <label  class="form-contact_label">
+                Номер телефона
+                <input class="contact_input" type="tel" maxlength="12">
+              </label>
+              <label  class="form-contact_label">
+                E-mail
+                <input class="contact_input" type="email">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form-payment">
             <legend class="form-payment_title">Оплата и доставка</legend>
-            <label class="form-payment_label">
-              Способ оплаты
-              <select>
-                <option value="">Картой</option>
-                <option value="">Наличный расчет</option>
-                <option value="">Прочее</option>
-              </select>
-            </label>
-            <label class="form-payment_label">
-              Споспоб получения
-              <select>
-                <option value="">Самовывоз</option>
-                <option value="">Пункт выдачи</option>
-                <option value="">Другое</option>
-              </select>
-
-            </label>
-            <label class="form-payment_label">
-              Город
-              <input type="text" maxlength="12">
-            </label>
-            <label class="form-payment_label">
-              Адрес доставки
-              <input type="text">
-            </label>
+            <div class="payment_label-wrapper">
+              <label class="form-payment_label">
+                Способ оплаты
+                <select class="payment_select">
+                  <option value="">Картой</option>
+                  <option value="">Наличный расчет</option>
+                  <option value="">Прочее</option>
+                </select>
+              </label>
+              <label class="form-payment_label">
+                Споспоб получения
+                <select class="payment_select">
+                  <option value="">Самовывоз</option>
+                  <option value="">Пункт выдачи</option>
+                  <option value="">Другое</option>
+                </select>
+  
+              </label>
+              <label class="form-payment_label">
+                Город
+                <input class="payment_input" type="text" maxlength="12">
+              </label>
+              <label class="form-payment_label">
+                Адрес доставки
+                <input class="payment_input" type="text">
+              </label>
+            </div>
           </fieldset>
         </form>
       </section>

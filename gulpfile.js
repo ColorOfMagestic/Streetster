@@ -65,7 +65,7 @@ function scripts() {
 function createWebp() {
     return src('app/img/**/*.{jpg,png,svg}')
     .pipe(webp())
-    .pipe(dest('app/img'))
+    .pipe(dest('dist/img'))
 }
 
 function images() {

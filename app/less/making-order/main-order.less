@@ -210,3 +210,107 @@
     }
   }
 }
+
+@media screen and (max-width:@tablet) {
+  .main-order {
+    .main-order-title {
+      margin: 0 0 30px;
+      .text-l;
+      text-align: center;
+    }
+    .main-order-wrapper-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      column-gap: 0;
+      .order-content_in-cart {
+        .content_in-cart-title {
+          .text-sx;
+          font-weight: 700px;
+        }
+        .content_in-cart-products {
+          .in-cart-product {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 15px;
+            .cart-product-description {
+              max-width: 230px;
+              overflow-x: auto;
+              padding-left: 0;
+              .text-s;
+              font-family:'FuturaPT-Book', sans-serif;
+  
+              .description-title {
+                padding-bottom: 10px;
+                font-weight: 700;
+              }
+              .description-content {
+                padding-bottom: 10px;
+                .text-sx;
+                text-align: center;
+              }
+            }
+            .cart-product-counter-container {
+              padding-bottom: 10px;
+              .cart-product-counter {
+                margin: 0 5px;
+              }
+              .cart-product-btn {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+
+        }
+        .in-cart_delivery {
+          text-align: center;
+        }
+        .in-cart_total {
+          text-align: center;
+        }
+        .in-cart_continuation {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 15px;
+          .text-sx;
+          font-weight: 700;
+        }
+        .in-cart_arrange-btn {
+          width: 100%;
+          .text-sx;
+          margin-bottom: 25px;
+          font-weight: 700;
+        }
+      }
+      .order-content_form  {
+        .form-contact {
+          .form-contact_title {
+            text-align: center;
+          }
+          .contact_label-wrapper {
+            .form-contact_label {
+              width: 100%;
+              &:nth-child(odd) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .form-payment {
+          .form-payment_title {
+            text-align: center;
+          }
+          .payment_label-wrapper {
+            .form-payment_label {
+              width: 100%;
+              &:nth-child(odd) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

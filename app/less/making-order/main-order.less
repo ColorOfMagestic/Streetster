@@ -286,7 +286,7 @@
       .order-content_form  {
         .form-contact {
           .form-contact_title {
-            text-align: center;
+            margin: 0 auto;
           }
           .contact_label-wrapper {
             .form-contact_label {
@@ -299,7 +299,7 @@
         }
         .form-payment {
           .form-payment_title {
-            text-align: center;
+            margin: 0 auto;
           }
           .payment_label-wrapper {
             .form-payment_label {
@@ -308,6 +308,34 @@
                 margin-right: 0;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:@tablet) and (max-width:@laptop) {
+  .main-order  {
+    .main-order-title {
+      margin: 0 0 30px;
+      .text-l;
+      text-align: center;
+    }
+    .main-order-wrapper-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      column-gap: 0;
+      .order-content_form {
+        .form-contact {
+          .form-contact_title {
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+        }
+        .form-payment {
+          .form-payment_title {
+            margin: 0 auto;
           }
         }
       }

@@ -15,4 +15,32 @@
       .text-s; 
     }
   }
+  .blogpost-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+    .blogpost-content_img {
+      min-width: 100%;
+      min-height: 100%;
+      display: flex;
+      object-fit: cover;
+    }
+    .blogpost-content_block {
+      padding-right: 40px;
+      width: 70%;
+      order: -1;
+      .blogpost-content_block_text:not(:last-child) {
+        padding-bottom: 20px;
+      }
+    }
+    .blogpost-content_block:not(:last-child) {
+      margin-bottom: 75px;
+    }
+
+    .content_block--full {
+      order: 2;
+      width: 100%;
+    }
+  }
 }

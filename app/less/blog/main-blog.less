@@ -137,6 +137,57 @@
         }
       }
     }
+    .other-posts {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin-bottom: 100px;
+      .other-post {
+        .other-post_content  {
+          position: relative;
+          min-height: 330px;
+          padding: 15px 17px 14px;
+          .other-post_content-title {
+            .text-s;
+            font-weight: 700;
+            text-align: center;  
+          }
+          .other-post_content-date {
+            padding-top: 5px;
+            font-size: 12px;
+            text-align: center;
+          }
+          .other-post_content-text {
+            margin-bottom: 55px;
+            padding-top: 30px;
+            padding-bottom: 0;
+            font-family:'FuturaPT-Book', sans-serif;
+            .text-sx;
+          }
+        }
+        .other-post_content-link {
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 15px;
+          display: block;
+          max-width: 85%;
+          margin: 0 auto;
+          padding: 10px 0;
+          text-align: center;
+          color: #fff;
+          text-decoration: none;
+          .text-s;
+          font-weight: 700px;
+          transition: 0.8s;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+
+        }
+      }
+    }
 
   }
 }

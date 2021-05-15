@@ -28,7 +28,7 @@
     }
     .blogpost-content_block {
       padding-right: 40px;
-      width: 70%;
+      width: 65%;
       .blogpost-content_block_text:not(:last-child) {
         padding-bottom: 20px;
       }
@@ -47,9 +47,57 @@
   .main-blogpost {
     .blogpost-poster {
       margin: 30px auto 30px;
-      background-image: url(../../img/news-img3.jpg);
+      background-image: url(../../img/news-img1.jpg);
       background-size: cover;
-      background-position: 64% 0;
+      background-position: 34% 0;
+      .blogpost-poster_title {    
+        padding-left: 0;
+        padding-top: 30px; 
+        text-align: center;
+        .text-m; 
+        font-weight: 700;
+      }
+      .title_date {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    .blogpost-content {
+      margin-bottom: 100px;
+      picture {
+        margin: 0 auto;
+        order: 1;
+      }
+      .blogpost-content_img {
+        padding-bottom: 30px;
+        object-fit: cover;
+      }
+      .blogpost-content_block {
+        padding-right: 0;
+        width: 100%;
+        .text-sx;
+        .blogpost-content_block_text:not(:last-child) {
+          padding-bottom: 20px;
+        }
+      }
+      .blogpost-content_block:not(:last-child) {
+        padding-bottom: 30px;
+      }
+      .content_block--full {
+        order: 2;
+      }
+    }
+  }
+
+}
+@media screen and (min-width: @tablet) and (max-width: @laptop) {
+  .main-blogpost {
+    .blogpost-poster {
+      margin: 30px auto 30px;
+      background-image: url(../../img/news-img1.jpg);
+      background-size: cover;
       .blogpost-poster_title {    
         padding-left: 0;
         padding-top: 30px; 
